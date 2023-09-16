@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    
+</body>
+<script>
+    async function displayCont(){
+        try{
+          let result=await fetch("https://jsonplaceholder.typicode.com/posts")
+          result= await result.json()
+          console.log(result)
+        }catch(error){
+            console.log(error)
+        }
+    }
+    displayCont()
+</script>
+</html>
